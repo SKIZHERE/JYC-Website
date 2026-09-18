@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tech",
+    "name": "Technology & Innovation",
+    "shortName": "Tech",
+    "tagline": "Hack, build, and ship — where ideas become products.",
+    "description": "The Technology & Innovation hub is JYC's engineering powerhouse. We run hackathons, tech talks, and project-building cohorts. From your first Git commit to a full-stack demo day, this is the space to grow as a builder. Members get mentorship, peer code reviews, and opportunities to represent JIIT at national hackathons.",
+    "image": "/images/hubs/hub-tech.svg",
+    "color": "#C8102E",
+    "icon": "code"
+  },
+  {
+    "id": "social-impact",
+    "name": "Social Impact",
+    "shortName": "Social Impact",
+    "tagline": "Young hands, real change — for campus and community.",
+    "description": "The Social Impact hub channels club energy into volunteer drives, sustainability initiatives, and community partnerships. We organise clean drives, donation campaigns, teaching sessions for under-served schools, and advocacy weeks on issues that matter to young Indians.",
+    "image": "/images/hubs/hub-social-impact.svg",
+    "color": "#1B8A5A",
+    "icon": "hands"
+  },
+  {
+    "id": "cultural",
+    "name": "Cultural & Arts",
+    "shortName": "Cultural",
+    "tagline": "Music, dance, drama — the rhythm of the campus.",
+    "description": "The Cultural & Arts hub celebrates creativity and heritage. We stage Ignite, JIIT's annual cultural fest, and run collectives for music, dance, drama, and fine arts throughout the year. Rehearsals, open mics, and inter-college showcases keep the calendar busy.",
+    "image": "/images/hubs/hub-cultural.svg",
+    "color": "#8E44AD",
+    "icon": "sparkles"
+  },
+  {
+    "id": "sports",
+    "name": "Sports",
+    "shortName": "Sports",
+    "tagline": "Play hard, play fair, play together.",
+    "description": "The Sports hub organises inter-house leagues, fitness challenges, and the annual Sportstice inter-college meet. Whether you're a varsity athlete or a weekend player, there is a team, tournament, or training session waiting for you.",
+    "image": "/images/hubs/hub-sports.svg",
+    "color": "#2E86DE",
+    "icon": "trophy"
+  },
+  {
+    "id": "media",
+    "name": "Media & Photography",
+    "shortName": "Media",
+    "tagline": "Campus stories, captured and told.",
+    "description": "The Media & Photography hub documents JYC life and runs the club's social channels. Members manage the media lab, cover every event, publish the monthly campus recap, and host workshops on photography, editing, and storytelling.",
+    "image": "/images/hubs/hub-media.svg",
+    "color": "#CA6F1E",
+    "icon": "camera"
+  },
+  {
+    "id": "design",
+    "name": "Design & Creative",
+    "shortName": "Design",
+    "tagline": "Posters, brands, and interfaces — beautiful by default.",
+    "description": "The Design & Creative hub crafts everything you see from JYC: posters, social creatives, event branding, and web experiences. Through weekly critique sessions and brief-based projects, members build a portfolio while giving the club its visual identity.",
+    "image": "/images/hubs/hub-design.svg",
+    "color": "#C9A227",
+    "icon": "pen"
+  }
+]

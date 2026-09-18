@@ -1,0 +1,128 @@
+[
+  {
+    "id": "gallery-01",
+    "eventId": "jyc-induction-2026",
+    "imageUrl": "/images/gallery/gallery-01.svg",
+    "caption": "Opening address at JYC Induction 2026",
+    "category": "induction"
+  },
+  {
+    "id": "gallery-02",
+    "eventId": "jyc-induction-2026",
+    "imageUrl": "/images/gallery/gallery-02.svg",
+    "caption": "New members raising the JYC flag",
+    "category": "induction"
+  },
+  {
+    "id": "gallery-03",
+    "eventId": "jyc-induction-2026",
+    "imageUrl": "/images/gallery/gallery-03.svg",
+    "caption": "Hub showcase stage",
+    "category": "induction"
+  },
+  {
+    "id": "gallery-04",
+    "eventId": "code-innovate-hackathon",
+    "imageUrl": "/images/gallery/gallery-04.svg",
+    "caption": "Teams deep in the overnight build sprint",
+    "category": "tech"
+  },
+  {
+    "id": "gallery-05",
+    "eventId": "code-innovate-hackathon",
+    "imageUrl": "/images/gallery/gallery-05.svg",
+    "caption": "Mentor desk during the hackathon",
+    "category": "tech"
+  },
+  {
+    "id": "gallery-06",
+    "eventId": "code-innovate-hackathon",
+    "imageUrl": "/images/gallery/gallery-06.svg",
+    "caption": "Demo day judging panel",
+    "category": "tech"
+  },
+  {
+    "id": "gallery-07",
+    "eventId": "ignite-cultural-fest",
+    "imageUrl": "/images/gallery/gallery-07.svg",
+    "caption": "Crowd at the open-air theatre",
+    "category": "cultural"
+  },
+  {
+    "id": "gallery-08",
+    "eventId": "ignite-cultural-fest",
+    "imageUrl": "/images/gallery/gallery-08.svg",
+    "caption": "Street play in full swing",
+    "category": "cultural"
+  },
+  {
+    "id": "gallery-09",
+    "eventId": "youth-leadership-summit",
+    "imageUrl": "/images/gallery/gallery-09.svg",
+    "caption": "Keynote at the Leadership Summit",
+    "category": "summit"
+  },
+  {
+    "id": "gallery-10",
+    "eventId": "youth-leadership-summit",
+    "imageUrl": "/images/gallery/gallery-10.svg",
+    "caption": "Workshop breakout session",
+    "category": "summit"
+  },
+  {
+    "id": "gallery-11",
+    "eventId": "tech-talk-series-ai",
+    "imageUrl": "/images/gallery/gallery-11.svg",
+    "caption": "AI talk — live model walkthrough",
+    "category": "tech"
+  },
+  {
+    "id": "gallery-12",
+    "eventId": "tech-talk-series-ai",
+    "imageUrl": "/images/gallery/gallery-12.svg",
+    "caption": "Q&A with engineers after the talk",
+    "category": "tech"
+  },
+  {
+    "id": "gallery-13",
+    "eventId": "inter-college-sportstice",
+    "imageUrl": "/images/gallery/gallery-13.svg",
+    "caption": "Football final at Sportstice",
+    "category": "sports"
+  },
+  {
+    "id": "gallery-14",
+    "eventId": "inter-college-sportstice",
+    "imageUrl": "/images/gallery/gallery-14.svg",
+    "caption": "Athletics on day two",
+    "category": "sports"
+  },
+  {
+    "id": "gallery-15",
+    "eventId": "campus-clean-drive",
+    "imageUrl": "/images/gallery/gallery-15.svg",
+    "caption": "Volunteers at the clean drive",
+    "category": "impact"
+  },
+  {
+    "id": "gallery-16",
+    "eventId": "campus-clean-drive",
+    "imageUrl": "/images/gallery/gallery-16.svg",
+    "caption": "Tree plantation along the campus stretch",
+    "category": "impact"
+  },
+  {
+    "id": "gallery-17",
+    "eventId": "design-week-2026",
+    "imageUrl": "/images/gallery/gallery-17.svg",
+    "caption": "Design Week poster competition entries",
+    "category": "design"
+  },
+  {
+    "id": "gallery-18",
+    "eventId": "media-lab-workshop",
+    "imageUrl": "/images/gallery/gallery-18.svg",
+    "caption": "Sunset photo walk from the Media Lab workshop",
+    "category": "media"
+  }
+]

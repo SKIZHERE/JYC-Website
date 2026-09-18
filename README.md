@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JYC — JIIT Youth Club Website
+
+Public website for the JIIT Youth Club, built with **Next.js 14 (App Router) + Tailwind CSS v3**.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command          | Description                     |
+| ---------------- | ------------------------------- |
+| `npm run dev`    | Start the dev server            |
+| `npm run build`  | Production build                |
+| `npm run start`  | Serve the production build      |
+| `npm run lint`   | ESLint check                    |
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/            Pages & layout (App Router)
+components/     Shared + page-specific components
+data/           Static content (events, hubs, team, gallery)
+lib/            Data utilities & ThemeContext
+public/images/  Placeholder images & logo (drop-in replaceable)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All content lives in `data/*.json` and matches the planned schema, so migrating
+to Supabase later only requires changes in `lib/data.js`.
 
-## Deploy on Vercel
+## Placeholders
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Names, texts, hubs, events, and stats are realistic placeholders — replace
+  them with official JYC content before launch.
+- Images are SVG placeholders. `next.config.js` sets `images.unoptimized: true`
+  for them; remove it once real `.webp`/`.jpg` assets are in place.
+- Colour tokens (`--accent-red`, `--accent-gold`, …) defined in
+  `app/globals.css` use JIIT/JYC brand colours; swap in the approved spec
+  values when available.

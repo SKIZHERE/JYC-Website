@@ -1,0 +1,216 @@
+[
+  {
+    "id": "code-innovate-hackathon",
+    "title": "Code Innovate Hackathon",
+    "description": "A 24-hour hackathon where students build solutions for real-world problems, mentored by industry experts.",
+    "date": "2026-10-15",
+    "startTime": "09:00",
+    "endTime": "09:00",
+    "venue": "JIIT Auditorium, Sector 62",
+    "hubId": "tech",
+    "bannerImage": "/images/events/code-innovate-hackathon.svg",
+    "registrationLink": "#",
+    "status": "upcoming",
+    "highlights": [
+      "200+ participants",
+      "24-hour hackathon format",
+      "₹50K prize pool",
+      "Mentors from top tech companies"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-04.svg",
+      "/images/gallery/gallery-05.svg",
+      "/images/gallery/gallery-06.svg"
+    ],
+    "fullWriteUp": "Code Innovate is JYC's flagship 24-hour hackathon. Teams of 2-4 students tackle challenges across AI, fintech, health, and sustainability. Expect surprise problem statements, curated mentors, and an overnight theatre-style build sprint culminating in demos in front of a panel of judges."
+  },
+  {
+    "id": "ignite-cultural-fest",
+    "title": "Ignite Cultural Fest",
+    "description": "An evening of music, dance, and drama celebrating the diverse cultures of JIIT.",
+    "date": "2026-11-07",
+    "startTime": "17:00",
+    "endTime": "22:00",
+    "venue": "Open Air Theatre, JIIT Sector 62",
+    "hubId": "cultural",
+    "bannerImage": "/images/events/ignite-cultural-fest.svg",
+    "registrationLink": "#",
+    "status": "upcoming",
+    "highlights": [
+      "15+ performances",
+      "Live student band",
+      "Inter-college dance battle",
+      "Food and craft stalls"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-07.svg",
+      "/images/gallery/gallery-08.svg"
+    ],
+    "fullWriteUp": "Ignite is JYC's annual cultural fest. From classical recitals to contemporary choreography and street plays, the evening showcases JIIT's brightest talent. The fest closes with a headline performance by student musicians and a DJ night under the stars."
+  },
+  {
+    "id": "youth-leadership-summit",
+    "title": "Youth Leadership Summit",
+    "description": "A day-long summit with inspiring talks and workshops on leadership, entrepreneurship, and civic responsibility.",
+    "date": "2026-11-21",
+    "startTime": "10:00",
+    "endTime": "17:00",
+    "venue": "Jaypee Convention Centre, Sector 62",
+    "hubId": "social-impact",
+    "bannerImage": "/images/events/youth-leadership-summit.svg",
+    "registrationLink": "#",
+    "status": "upcoming",
+    "highlights": [
+      "8 expert speakers",
+      "Leadership bootcamp",
+      "Networking lunch",
+      "Certificate of participation"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-09.svg",
+      "/images/gallery/gallery-10.svg"
+    ],
+    "fullWriteUp": "The Youth Leadership Summit brings entrepreneurs, civic leaders, and change-makers to JIIT for a full day of talks, panel discussions, and hands-on workshops. Students leave with leadership frameworks, practical communication skills, and a network of like-minded peers."
+  },
+  {
+    "id": "tech-talk-series-ai",
+    "title": "Tech Talk: AI in the Real World",
+    "description": "Industry practitioners unpack how AI is deployed in production across fintech and healthcare.",
+    "date": "2026-12-05",
+    "startTime": "14:00",
+    "endTime": "16:30",
+    "venue": "Seminar Hall C, JIIT Sector 62",
+    "hubId": "tech",
+    "bannerImage": "/images/events/tech-talk-series-ai.svg",
+    "registrationLink": "#",
+    "status": "upcoming",
+    "highlights": [
+      "Live model walkthrough",
+      "Case-study breakouts",
+      "Q&A with engineers"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-11.svg",
+      "/images/gallery/gallery-12.svg"
+    ],
+    "fullWriteUp": "A fireside-style session where engineers from local startups and product teams show how AI actually ships: data pipelines, evaluation, and cost trade-offs. Bring questions and your laptop — a live mini-workshop follows the talk."
+  },
+  {
+    "id": "jyc-induction-2026",
+    "title": "JYC Induction 2026",
+    "description": "Kick-off ceremony welcoming new members, with hub introductions and club roadmap for the year.",
+    "date": "2026-08-12",
+    "startTime": "11:00",
+    "endTime": "14:00",
+    "venue": "JIIT Auditorium, Sector 62",
+    "hubId": "social-impact",
+    "bannerImage": "/images/events/jyc-induction-2026.svg",
+    "registrationLink": "",
+    "status": "past",
+    "highlights": [
+      "350+ new members onboarded",
+      "6 hub showcases",
+      "Year roadmap revealed"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-01.svg",
+      "/images/gallery/gallery-02.svg",
+      "/images/gallery/gallery-03.svg"
+    ],
+    "fullWriteUp": "The academic year begins with Induction — a lively ceremony where the leadership team presents the club's vision, each hub stages a short showcase, and new members formally join their chosen team."
+  },
+  {
+    "id": "inter-college-sportstice",
+    "title": "Sportstice Inter-College Meet",
+    "description": "A weekend of competitive sports — football, cricket, badminton, and athletics — against 12 visiting colleges.",
+    "date": "2026-03-14",
+    "startTime": "09:00",
+    "endTime": "18:00",
+    "venue": "JIIT Sports Complex, Sector 62",
+    "hubId": "sports",
+    "bannerImage": "/images/events/inter-college-sportstice.svg",
+    "registrationLink": "",
+    "status": "past",
+    "highlights": [
+      "12 colleges participated",
+      "4 sports disciplines",
+      "400+ athletes"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-13.svg",
+      "/images/gallery/gallery-14.svg"
+    ],
+    "fullWriteUp": "Sportstice put JIIT's sporting culture on the map. Teams from across the NCR competed across four disciplines over two action-packed days, with the home crowd cheering the football and cricket finals to the finish."
+  },
+  {
+    "id": "design-week-2026",
+    "title": "Design Week 2026",
+    "description": "A week of UI/UX workshops, design critiques, and a poster-design competition open to all students.",
+    "date": "2026-02-20",
+    "startTime": "13:00",
+    "endTime": "17:00",
+    "venue": "Design Studio, JIIT Sector 62",
+    "hubId": "design",
+    "bannerImage": "/images/events/design-week-2026.svg",
+    "registrationLink": "",
+    "status": "past",
+    "highlights": [
+      "5 hands-on workshops",
+      "Portfolio reviews",
+      "120+ design submissions"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-09.svg",
+      "/images/gallery/gallery-10.svg",
+      "/images/gallery/gallery-11.svg"
+    ],
+    "fullWriteUp": "Design Week explored everything from typography to prototyping. Students workshopped real briefs, received portfolio feedback from working designers, and closed the week with a poster competition whose entries still decorate the design studio."
+  },
+  {
+    "id": "campus-clean-drive",
+    "title": "Campus Clean Drive",
+    "description": "A volunteer-led cleanup and tree-plantation drive across the JIIT campus and nearby community.",
+    "date": "2025-11-29",
+    "startTime": "08:00",
+    "endTime": "12:00",
+    "venue": "JIIT Campus, Sector 62",
+    "hubId": "social-impact",
+    "bannerImage": "/images/events/campus-clean-drive.svg",
+    "registrationLink": "",
+    "status": "past",
+    "highlights": [
+      "150 volunteers",
+      "300 saplings planted",
+      "2 km stretch cleaned"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-15.svg",
+      "/images/gallery/gallery-16.svg"
+    ],
+    "fullWriteUp": "In partnership with NSS JIIT, the clean drive gathered 150 volunteers who cleaned a two-kilometre stretch around the campus and planted 300 native saplings. A small step toward the club's larger sustainability pledge."
+  },
+  {
+    "id": "media-lab-workshop",
+    "title": "Media Lab: Photography & Storytelling",
+    "description": "An introductory workshop on phone photography, framing, and short-form video storytelling.",
+    "date": "2025-10-10",
+    "startTime": "16:00",
+    "endTime": "18:30",
+    "venue": "Media Lab, JIIT Sector 62",
+    "hubId": "media",
+    "bannerImage": "/images/events/media-lab-workshop.svg",
+    "registrationLink": "",
+    "status": "past",
+    "highlights": [
+      "90 attendees",
+      "Hands-on photo walk",
+      "Editing crash course"
+    ],
+    "gallery": [
+      "/images/gallery/gallery-05.svg",
+      "/images/gallery/gallery-06.svg",
+      "/images/gallery/gallery-07.svg"
+    ],
+    "fullWriteUp": "The Media Lab workshop turned phones into cameras. Students learned composition rules, lighting hacks, and a fast editing workflow, then put it into practice on a sunset photo walk around campus."
+  }
+]

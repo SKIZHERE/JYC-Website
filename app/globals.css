@@ -1,0 +1,131 @@
+/* =============================================================
+   JYC — Global Styles & Design Tokens
+   -------------------------------------------------------------
+   COLOUR TOKENS (placeholder — approve official hex later)
+   accent-red  : JIIT crimson            light #C8102E / dark #E63950
+   accent-gold : JYC gold                light #C9A227 / dark #D9B24A
+   ============================================================= */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light mode */
+  --bg-main: #f8f8f5;
+  --bg-card: #ffffff;
+  --bg-elevated: #f1f1ec;
+  --text-primary: #1a1a1a;
+  --text-muted: #5c5c5c;
+  --accent-red: #c8102e;
+  --accent-gold: #c9a227;
+  --border-tech: #e2e2dc;
+  --shadow-color: rgba(16, 24, 40, 0.06);
+}
+
+[data-theme="dark"] {
+  --bg-main: #0e1116;
+  --bg-card: #161b22;
+  --bg-elevated: #1e2530;
+  --text-primary: #f2f2f0;
+  --text-muted: #9aa3b2;
+  --accent-red: #e63950;
+  --accent-gold: #d9b24a;
+  --border-tech: #262d38;
+  --shadow-color: rgba(0, 0, 0, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--accent-gold);
+  color: #1a1a1a;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-elevated);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-gold);
+  border-radius: 6px;
+  border: 2px solid var(--bg-elevated);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-red);
+}
+
+/* Focus ring — accent-gold */
+:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* =============================================================
+   Reusable utility classes
+   ============================================================= */
+
+@layer components {
+  .jyc-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .jyc-section {
+    @apply py-16 lg:py-24;
+  }
+
+  .jyc-h1 {
+    @apply text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl;
+  }
+
+  .jyc-h2 {
+    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+  }
+
+  .jyc-h3 {
+    @apply text-xl font-bold sm:text-2xl;
+  }
+
+  .jyc-glass {
+    @apply backdrop-blur-md;
+    background-color: color-mix(in srgb, var(--bg-main) 80%, transparent);
+  }
+
+  .jyc-card {
+    @apply rounded-xl border shadow-card;
+    background-color: var(--bg-card);
+    border-color: var(--border-tech);
+    box-shadow: 0 4px 20px var(--shadow-color);
+  }
+
+  .jyc-gradient-text {
+    background: linear-gradient(120deg, var(--accent-red), var(--accent-gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .jyc-tech-circuit {
+    background-image:
+      radial-gradient(circle, var(--accent-gold) 1px, transparent 1px),
+      linear-gradient(120deg, transparent 75%, var(--accent-gold) 76%, transparent 77%);
+    background-size: 24px 24px, 120px 120px;
+    opacity: 0.12;
+  }
+}

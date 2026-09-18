@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+  <defs>
+    <radialGradient id="g" cx="0.35" cy="0.3" r="1">
+      <stop offset="0" stop-color="#1B8A5A"/>
+      <stop offset="1" stop-color="#0b2c1e"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#g)"/>
+  <circle cx="520" cy="120" r="130" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="110" cy="540" r="90" fill="#C9A227" opacity="0.25"/>
+  <text x="70" y="360" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" fill="#FFFFFF">SOCIAL IMPACT</text>
+  <rect x="70" y="400" width="120" height="8" rx="4" fill="#C9A227"/>
+</svg>

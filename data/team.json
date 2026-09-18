@@ -1,0 +1,184 @@
+[
+  {
+    "id": "president",
+    "name": "Aarav Kapoor",
+    "role": "President",
+    "level": "leadership",
+    "hubId": "",
+    "photo": "/images/team/team-leadership-1.svg",
+    "bio": "Final-year BTech (CSE). Leads the club's vision, external partnerships, and the leadership cabinet.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "vp-operations",
+    "name": "Sanya Mehta",
+    "role": "Vice President, Operations",
+    "level": "leadership",
+    "hubId": "",
+    "photo": "/images/team/team-leadership-2.svg",
+    "bio": "Third-year BTech (ECE). Keeps every event on rails — logistics, budgets, and the ops team.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "vp-outreach",
+    "name": "Rohan Verma",
+    "role": "Vice President, Outreach",
+    "level": "leadership",
+    "hubId": "",
+    "photo": "/images/team/team-core-1.svg",
+    "bio": "Third-year BTech (CSE). Owns sponsorships, inter-college relations, and brand reputation.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "hub-tech",
+    "name": "Ishita Sharma",
+    "role": "Head, Technology & Innovation",
+    "level": "hub-head",
+    "hubId": "tech",
+    "photo": "/images/team/team-core-2.svg",
+    "bio": "Full-stack enthusiast who runs the hackathon pipeline and project cohorts.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "hub-social-impact",
+    "name": "Kabir Singh",
+    "role": "Head, Social Impact",
+    "level": "hub-head",
+    "hubId": "social-impact",
+    "photo": "/images/team/team-leadership-1.svg",
+    "bio": "Volunteer veteran driving drives, partnerships, and the sustainability pledge.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "hub-cultural",
+    "name": "Aisha Khan",
+    "role": "Head, Cultural & Arts",
+    "level": "hub-head",
+    "hubId": "cultural",
+    "photo": "/images/team/team-core-3.svg",
+    "bio": "Dancer and curator of Ignite — runs all music, dance, and drama collectives.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "hub-sports",
+    "name": "Dev Patel",
+    "role": "Head, Sports",
+    "level": "hub-head",
+    "hubId": "sports",
+    "photo": "/images/team/team-core-1.svg",
+    "bio": "Goalkeeper-turned-organiser for leagues, fitness challenges, and Sportstice.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "hub-media",
+    "name": "Naina Rao",
+    "role": "Head, Media & Photography",
+    "level": "hub-head",
+    "hubId": "media",
+    "photo": "/images/team/team-core-2.svg",
+    "bio": "Photographer and content lead. Runs the media lab and campus recap series.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "hub-design",
+    "name": "Arjun Malhotra",
+    "role": "Head, Design & Creative",
+    "level": "hub-head",
+    "hubId": "design",
+    "photo": "/images/team/team-core-3.svg",
+    "bio": "UI/UX designer crafting JYC's visual identity, posters, and branding.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "core-1",
+    "name": "Meera Joshi",
+    "role": "Core Team, Tech",
+    "level": "core",
+    "hubId": "tech",
+    "photo": "/images/team/team-core-4.svg",
+    "bio": "Backend developer and automation wizard for event registrations.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "core-2",
+    "name": "Vivaan Gupta",
+    "role": "Core Team, Social Impact",
+    "level": "core",
+    "hubId": "social-impact",
+    "photo": "/images/team/team-core-5.svg",
+    "bio": "Community coordinator for teaching sessions and donation drives.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "core-3",
+    "name": "Zoya Ansari",
+    "role": "Core Team, Cultural",
+    "level": "core",
+    "hubId": "cultural",
+    "photo": "/images/team/team-core-6.svg",
+    "bio": "Theatre lead and open-mic organiser.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "core-4",
+    "name": "Aditya Nair",
+    "role": "Core Team, Sports",
+    "level": "core",
+    "hubId": "sports",
+    "photo": "/images/team/team-leadership-1.svg",
+    "bio": "Runs fixture scheduling and inter-college coordination.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  },
+  {
+    "id": "core-5",
+    "name": "Ritika Bansal",
+    "role": "Core Team, Design",
+    "level": "core",
+    "hubId": "design",
+    "photo": "/images/team/team-core-1.svg",
+    "bio": "Illustration lead for event campaigns and merchandise.",
+    "socialLinks": {
+      "linkedin": "#",
+      "instagram": "#"
+    }
+  }
+]

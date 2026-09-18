@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a3011"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2">
+    <path d="M0 560 L300 480 L560 540 L900 430 L1280 520"/>
+    <circle cx="560" cy="540" r="7" fill="#FFFFFF" stroke="none"/>
+    <circle cx="900" cy="430" r="7" fill="#FFFFFF" stroke="none"/>
+  </g>
+  <rect x="70" y="540" width="200" height="46" rx="23" fill="#C9A227"/>
+  <text x="170" y="570" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#1a1a1a">JYC EVENT</text>
+  <text x="70" y="330" font-family="Inter, system-ui, sans-serif" font-size="84" font-weight="800" fill="#FFFFFF">DESIGN WEEK</text>
+  <text x="70" y="390" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="500" fill="#FFFFFF" opacity="0.85">2026</text>
+  <text x="1210" y="680" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#FFFFFF" opacity="0.5">placeholder image</text>
+</svg>
