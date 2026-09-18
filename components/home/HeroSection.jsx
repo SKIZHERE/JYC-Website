@@ -31,16 +31,14 @@ export default function HeroSection() {
 
         <ScrollAnimation animation="fade-up" delay={120}>
           <h1 className="jyc-h1 max-w-4xl text-white">
-            Innovation, Culture &amp; Impact —{" "}
-            <span className="jyc-gradient-text">engineered by students.</span>
+            Empowering The Leaders{" "}<br />
+            <span className="jyc-gradient-text">of Tomorrow</span>
           </h1>
         </ScrollAnimation>
 
         <ScrollAnimation animation="fade-up" delay={240}>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
-            {`JYC is the JIIT Youth Club — a student-run community where builders,
-          creators, athletes, and changemakers come together to make campus
-          unforgettable.`}
+            {`JIIT Youth Club- Your platform to soar and achieve your potential.`}
           </p>
         </ScrollAnimation>
 
