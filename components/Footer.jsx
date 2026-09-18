@@ -55,14 +55,16 @@ export default function Footer() {
       <div className="jyc-container py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/logos/jyc-logo.svg"
-              alt="JYC logo"
-              width={48}
-              height={48}
-              className="h-12 w-12"
-            />
+            <span className="grid h-16 w-16 place-items-center overflow-hidden rounded-full bg-white shadow-card ring-1 ring-jyc-accent-gold/40">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logos/jyc-logo.jpg"
+                alt="JYC logo"
+                width={64}
+                height={64}
+                className="h-16 w-16 object-cover"
+              />
+            </span>
             <p className="mt-4 text-sm leading-relaxed text-jyc-text-muted">
               {`JYC is the JIIT Youth Club — a student-run community fostering
               innovation, culture, and social impact at Jaypee Institute of

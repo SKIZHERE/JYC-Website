@@ -53,14 +53,16 @@ export default function Navbar() {
             className="flex shrink-0 items-center gap-2.5"
             aria-label="JYC — JIIT Youth Club home"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/logos/jyc-logo.svg"
-              alt="JYC logo"
-              width={36}
-              height={36}
-              className="h-9 w-9"
-            />
+            <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-white shadow-card ring-1 ring-jyc-accent-gold/40">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logos/jyc-logo.jpg"
+                alt="JYC logo"
+                width={44}
+                height={44}
+                className="h-11 w-11 object-cover"
+              />
+            </span>
             <span className="hidden flex-col leading-tight sm:flex">
               <span className="text-lg font-extrabold tracking-tight">JYC</span>
               <span className="text-[11px] font-medium text-jyc-text-muted">

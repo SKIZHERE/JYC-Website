@@ -24,8 +24,8 @@ export const metadata = {
   ],
   metadataBase: new URL("https://jyc.jiit.ac.in"),
   icons: {
-    icon: "/images/logos/jyc-logo.svg",
-    apple: "/images/logos/jyc-logo.svg",
+    icon: "/images/logos/jyc-logo.jpg",
+    apple: "/images/logos/jyc-logo.jpg",
   },
   openGraph: {
     title: "JYC — JIIT Youth Club",

@@ -39,8 +39,9 @@ to Supabase later only requires changes in `lib/data.js`.
 
 - Names, texts, hubs, events, and stats are realistic placeholders — replace
   them with official JYC content before launch.
-- Images are SVG placeholders. `next.config.js` sets `images.unoptimized: true`
-  for them; remove it once real `.webp`/`.jpg` assets are in place.
-- Colour tokens (`--accent-red`, `--accent-gold`, …) defined in
-  `app/globals.css` use JIIT/JYC brand colours; swap in the approved spec
-  values when available.
+- Images (hero, events, hubs, team, gallery) are SVG placeholders.
+  `next.config.js` sets `images.unoptimized: true` for them; remove it once
+  real `.webp`/`.jpg` assets are in place.
+- Colour tokens (light & dark) are defined in `app/globals.css` per the spec:
+  beige/cream light surfaces, near-black dark surfaces, red accent, gold
+  secondary. The club logo lives at `public/images/logos/jyc-logo.jpg`.
