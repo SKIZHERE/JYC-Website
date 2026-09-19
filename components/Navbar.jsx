@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { motion } from "framer-motion"
 import ThemeToggle from "./ThemeToggle"
 
 const NAV_LINKS = [
@@ -71,26 +72,30 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <ul className="hidden items-center gap-1 lg:flex">
+          {/* Desktop Nav with Magnetic Sliding Pill */}
+          <ul className="hidden items-center gap-1 rounded-full p-1 lg:flex">
             {NAV_LINKS.map((link) => {
               const active = isActive(link.href)
               return (
-                <li key={link.href}>
+                <li key={link.href} className="relative">
                   <Link
                     href={link.href}
-                    className={`relative rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+                    className={`relative z-10 block rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors duration-200 ${
                       active
-                        ? "text-jyc-accent-gold"
+                        ? "text-white"
                         : "text-jyc-text-muted hover:text-jyc-text-primary"
                     }`}
                   >
                     {link.label}
-                    <span
-                      className={`absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-jyc-accent-gold transition-transform duration-300 ${
-                        active ? "scale-x-100" : "scale-x-0"
-                      }`}
-                    />
                   </Link>
+
+                  {active && (
+                    <motion.span
+                      layoutId="activeTabPill"
+                      transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                      className="absolute inset-0 z-0 rounded-full bg-jyc-accent-red shadow-sm"
+                    />
+                  )}
                 </li>
               )
             })}
@@ -155,7 +160,7 @@ export default function Navbar() {
                     onClick={() => setMenuOpen(false)}
                     className={`block rounded-lg px-4 py-3 text-base font-medium transition-colors ${
                       active
-                        ? "text-jyc-accent-gold"
+                        ? "bg-jyc-accent-red text-white"
                         : "text-jyc-text-muted hover:bg-jyc-bg-elevated hover:text-jyc-text-primary"
                     }`}
                   >
