@@ -137,9 +137,18 @@ export default function Footer() {
       <div className="border-t border-solid" style={{ borderColor: "var(--border-tech)" }}>
         <div className="jyc-container flex flex-col items-center justify-between gap-2 py-5 text-xs text-jyc-text-muted sm:flex-row">
           <p>&copy; {year} JYC. All rights reserved.</p>
-          <p>Made with fidelity by the JIIT Youth Club</p>
+          <div className="flex items-center gap-4">
+            <p>Made with fidelity by the JIIT Youth Club</p>
+            <span className="text-neutral-600">•</span>
+            <Link
+              href="/admin"
+              className="text-[11px] text-neutral-500 transition-colors hover:text-jyc-accent-gold"
+            >
+              Admin Access ↗
+            </Link>
+          </div>
         </div>
       </div>
-    </footer>
+      </footer>
   )
 }

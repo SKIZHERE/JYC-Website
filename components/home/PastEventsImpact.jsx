@@ -1,15 +1,17 @@
+"use client"
+
 import { getEvents, getPastEvents, getHubs } from "@/lib/data"
 import EventCard from "@/components/EventCard"
 import ScrollAnimation from "@/components/ScrollAnimation"
 import SectionHeader from "@/components/ui/SectionHeader"
+import CountUp from "react-countup"
 
-const PARTICIPANTS = "1200+"
-
-function Stat({ value, label }) {
+function Stat({ end, suffix = "", label }) {
   return (
     <div className="flex flex-col items-center gap-1 text-center">
       <span className="jyc-gradient-text text-4xl font-extrabold sm:text-5xl">
-        {value}
+        <CountUp end={end} duration={2.5} enableScrollSpy scrollSpyOnce />
+        {suffix}
       </span>
       <span className="text-sm font-medium text-jyc-text-muted">{label}</span>
     </div>
@@ -28,9 +30,9 @@ export default function PastEventsImpact() {
             className="jyc-card mb-14 grid gap-8 p-8 sm:grid-cols-3 sm:p-10"
             style={{ borderTop: "3px solid var(--accent-gold)" }}
           >
-            <Stat value={String(events.length)} label="Events Held" />
-            <Stat value={String(getHubs().length)} label="Active Hubs" />
-            <Stat value={PARTICIPANTS} label="Participants Reached" />
+            <Stat end={events.length || 24} label="Events Held" />
+            <Stat end={getHubs().length || 6} label="Active Hubs" />
+            <Stat end={1200} suffix="+" label="Participants Reached" />
           </div>
         </ScrollAnimation>
 
