@@ -23,7 +23,22 @@ import {SkipLink,InstallPrompt,MaintenanceGate,ErrorBoundary,RecruitmentHub,Audi
 import Admin from './admin-chunk.jsx';
 
 const logo='/jyc-phoenix-reference.png';
-const CREATOR=Object.freeze({name:'Kaustubh Dua',role:'Website Creator',linkedin:'https://www.linkedin.com/in/kaustubh-dua-2b5a76416',instagram:'https://www.instagram.com/kaustubh.this.side/',github:'https://github.com/coolbandariya',email:'kaustubhdua1991@gmail.com'});
+const CREATORS=Object.freeze([
+  {
+    name: 'Kaustubh Dua',
+    role: 'Website Creator',
+    linkedin: 'https://www.linkedin.com/in/kaustubh-dua-2b5a76416',
+    instagram: 'https://www.instagram.com/kaustubh.this.side/',
+    github: 'https://github.com/coolbandariya',
+    email: 'kaustubhdua1991@gmail.com'
+  },
+  {
+    name: 'Krishna Gupta',
+    role: 'Frontend & UI Upgrades',
+    github: 'https://github.com/krishnag9310'
+  }
+]);
+const CREATOR = CREATORS[0];
 const uid=()=>globalThis.crypto?.randomUUID?.()||`${Date.now()}-${Math.random().toString(36).slice(2)}`;
 const storageGet=(key,fallback=null)=>{try{const value=localStorage.getItem(key);return value===null?fallback:value}catch{return fallback}};
 const storageSet=(key,value)=>{try{localStorage.setItem(key,String(value));return true}catch{return false}};
@@ -260,7 +275,49 @@ function Gallery({data}){const [filter,setFilter]=useState('All');const items=da
 function GalleryItems({items}){const [activeIndex,setActiveIndex]=useState(null);const active=activeIndex===null?null:items[activeIndex];useEffect(()=>{if(activeIndex===null)return;const onKey=e=>{if(e.key==='Escape')setActiveIndex(null);if(e.key==='ArrowRight')setActiveIndex(i=>(i+1)%items.length);if(e.key==='ArrowLeft')setActiveIndex(i=>(i-1+items.length)%items.length)};window.addEventListener('keydown',onKey);const previous=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{window.removeEventListener('keydown',onKey);document.body.style.overflow=previous}},[activeIndex,items.length]);if(!items?.length)return null;return <><div className="gallery-grid">{items.map((g,i)=><button className="gallery-item" key={g.id||i} onClick={()=>setActiveIndex(i)} aria-label={`Open ${g.caption||'JYC gallery image'}`}><img src={g.url} loading="lazy" alt={g.caption||'JYC gallery moment'}/><span>{g.caption||'JYC moment'}</span></button>)}</div>{active&&<div className="overlay lightbox" role="dialog" aria-modal="true" aria-label={active.caption||'JYC gallery image'} onClick={()=>setActiveIndex(null)}><button className="lightbox-close" onClick={()=>setActiveIndex(null)} aria-label="Close image">×</button><button className="lightbox-nav prev" onClick={e=>{e.stopPropagation();setActiveIndex(i=>(i-1+items.length)%items.length)}} aria-label="Previous image">‹</button><div onClick={e=>e.stopPropagation()}><img src={active.url} alt={active.caption||''}/><p>{active.caption||''}</p></div><button className="lightbox-nav next" onClick={e=>{e.stopPropagation();setActiveIndex(i=>(i+1)%items.length)}} aria-label="Next image">›</button><span className="lightbox-counter">{activeIndex+1} / {items.length}</span></div>}</>}
 function GalleryPreview({data}){const nav=useNavigate();const items=data.gallery.slice(0,6);return <section className="section"><SectionHead eyebrow="GALLERY" title="A visual archive in the making."/><GalleryItems items={items}/>{!items.length&&<State compact title="Something is coming." text="Gallery content will appear when JYC uploads official moments."/>}<Button secondary onClick={()=>nav('/gallery')}>Open gallery →</Button></section>}
 function Team({data}){const [q,setQ]=useState('');const [role,setRole]=useState('All');const members=data.team.filter(m=>m.published!==false).sort((a,b)=>(a.sortOrder||0)-(b.sortOrder||0));const roles=['All',...new Set(members.map(m=>m.role||m.position).filter(Boolean))];const list=members.filter(m=>(role==='All'||(m.role||m.position)===role)&&(!q||`${m.name} ${m.role||m.position||''} ${m.bio||''}`.toLowerCase().includes(q.toLowerCase())));return <section className="section page"><div className="compact-page-head reveal"><div><span className="eyebrow">JYC TEAM</span><h1>The people behind the experience.</h1><p>Meet the published JYC leadership and team.</p></div><div className="page-stat-row"><span><b>{members.length}</b> people</span><span><b>{roles.length-1}</b> roles</span></div></div><div className="discover-panel team-toolbar reveal"><label className="club-search"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search the JYC team..." aria-label="Search JYC team"/>{q&&<button type="button" onClick={()=>setQ('')} aria-label="Clear team search">×</button>}</label><div className="gallery-filter">{roles.map(x=><button key={x} className={role===x?'active':''} onClick={()=>setRole(x)}>{x}</button>)}</div></div>{list.length?<div className="team-grid">{list.map(m=><Card className="team-card" key={m.id}><div className="team-photo">{m.photo||m.image?<img src={m.photo||m.image} alt="" loading="lazy"/>:<img src={logo} alt="JYC"/>}</div><span className="tag">{m.role||m.position||'JYC Team'}</span><h3>{m.name}</h3>{m.bio&&<p>{m.bio}</p>}<div className="social-row">{m.instagram&&<a href={m.instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a>}{m.linkedin&&<a href={m.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>}</div></Card>)}</div>:<State title="No team members found." text="Try another name or role."/>}</section>}
-function Contact({data}){return <section className="section page"><Back label="Back to home" to="/"/><SectionHead eyebrow="CONTACT" title="Stay connected with JYC." text="Follow official channels for updates, events and opportunities."/><div className="contact-grid"><a className="contact-card" href="https://www.instagram.com/jiityouthclub128/" target="_blank" rel="noreferrer"><span>01</span><h3>Instagram</h3><p>@jiityouthclub128</p>↗</a><a className="contact-card" href="https://chat.whatsapp.com/BUvEqpevLr6Jp44904ysht?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noreferrer"><span>02</span><h3>WhatsApp Community</h3><p>Join the JYC community.</p>↗</a><div className="contact-card"><span>03</span><h3>Website Creator</h3><p>{data.creator.name} · {data.creator.role}</p><div className="social-row"><a href={data.creator.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href={data.creator.instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href={data.creator.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><p>{data.creator.email}</p></div></div></section>}
+function Contact({data}){
+  return (
+    <section className="section page">
+      <Back label="Back to home" to="/"/>
+      <SectionHead eyebrow="CONTACT" title="Stay connected with JYC." text="Follow official channels for updates, events and opportunities."/>
+      <div className="contact-grid">
+        <a className="contact-card" href="https://www.instagram.com/jiityouthclub128/" target="_blank" rel="noreferrer">
+          <span>01</span>
+          <h3>Instagram</h3>
+          <p>@jiityouthclub128</p>↗
+        </a>
+        <a className="contact-card" href="https://chat.whatsapp.com/BUvEqpevLr6Jp44904ysht?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noreferrer">
+          <span>02</span>
+          <h3>WhatsApp Community</h3>
+          <p>Join the JYC community.</p>↗
+        </a>
+
+        {/* 03: Website Creator */}
+        <div className="contact-card">
+          <span>03</span>
+          <h3>Website Creator</h3>
+          <p>{data.creator.name} · {data.creator.role}</p>
+          <div className="social-row">
+            <a href={data.creator.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href={data.creator.instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href={data.creator.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+          <p>{data.creator.email}</p>
+        </div>
+
+        {/* 04: Frontend & UI Upgrades */}
+        <div className="contact-card">
+          <span>04</span>
+          <h3>Frontend & UI Upgrades</h3>
+          <p>Krishna Gupta · Frontend Developer</p>
+          <div className="social-row">
+            <a href="https://github.com/krishnag9310" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function DownloadPage(){
  const nav=useNavigate();
