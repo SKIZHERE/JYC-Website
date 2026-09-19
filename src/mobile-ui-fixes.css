@@ -1,0 +1,383 @@
+/* Mobile UI fixes — cosmetic only. Loaded last so it wins every earlier !important rule. */
+
+.brand img {
+  object-fit: contain !important;
+  image-rendering: auto !important;
+}
+
+/* Remove the stray drawn magnifier pseudo-elements that poke out toward the hamburger. */
+.search-trigger:before,
+.search-trigger:after {
+  content: none !important;
+}
+
+.search-trigger {
+  position: relative !important;
+  z-index: 0 !important;
+}
+
+@media (min-width: 1051px) {
+  .theme-toggle {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    order: 3 !important;
+    margin: 0 !important;
+    z-index: auto !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 1050px) {
+
+  /* 1. Theme toggle lives inside the nav row, not floating over the hero. */
+  .theme-toggle {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    z-index: auto !important;
+    box-shadow: none !important;
+    order: 2 !important;
+    margin-left: auto !important;
+    width: 46px !important;
+    height: 46px !important;
+    flex: 0 0 46px !important;
+    border-radius: 50% !important;
+    border: 1px solid var(--border-tech) !important;
+    background: color-mix(in srgb, var(--bg-card) 64%, transparent) !important;
+    display: grid !important;
+    place-items: center !important;
+    font-size: 18px !important;
+  }
+
+  /* 2. Search becomes a round icon button with a centred glyph. */
+  .search-trigger {
+    order: 3 !important;
+    margin-left: 0 !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    flex-basis: 46px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    border: 1px solid var(--border-tech) !important;
+    background: color-mix(in srgb, var(--bg-card) 60%, transparent) !important;
+    display: grid !important;
+    place-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+  }
+
+  .search-trigger span,
+  .search-trigger kbd {
+    display: none !important;
+  }
+
+  /* 3. Logo slightly larger and undistorted. */
+  .brand img {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .hamb {
+    order: 4 !important;
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+
+  /* 4. Team/Clubs toolbar no longer floats over the cards. */
+  .discover-panel {
+    position: static !important;
+    top: auto !important;
+    z-index: auto !important;
+  }
+
+  /* 5. Pill-shaped search + filter UI. */
+  .club-search {
+    border-radius: 999px !important;
+    min-height: 48px !important;
+    padding: 0 16px !important;
+  }
+
+  .gallery-filter button {
+    min-height: 42px !important;
+    padding: 0 16px !important;
+  }
+}
+
+@media (max-width: 760px) {
+
+  /* 6. Remove the lone "no published clubs yet" box on the home page. */
+  .home .dark-band .state {
+    display: none !important;
+  }
+
+  /* 7. Subtle divider line after each home section. */
+  .home>.section,
+  .home>.dark-band {
+    border-top: 1px solid color-mix(in srgb, var(--text-primary) 10%, transparent) !important;
+  }
+
+  /* 8. Calendar pills. */
+  .calendar-mode-tabs button {
+    min-height: 44px !important;
+    padding: 0 18px !important;
+    font-size: 12px !important;
+  }
+
+  .calendar-toolbar button {
+    border-radius: 999px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Layout hardening — resolve the many overlapping override rules.     */
+/* ------------------------------------------------------------------ */
+
+/* Never let anything push the page wider than the viewport. */
+html,
+body {
+  overflow-x: hidden;
+}
+
+.home,
+.hero {
+  overflow-x: clip !important;
+}
+
+/* Team / Clubs toolbar: search and filter pills always stack cleanly. */
+.team-toolbar {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.team-toolbar .club-search {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  flex: 0 0 auto !important;
+}
+
+.team-toolbar .gallery-filter {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  flex-wrap: nowrap !important;
+  padding-bottom: 4px !important;
+}
+
+.club-search input {
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
+  width: auto !important;
+}
+
+.club-search label,
+.club-search select {
+  min-width: 0 !important;
+}
+
+/* Consistent team grid columns per viewport. */
+@media (min-width: 1150px) {
+  .team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1149px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .team-photo {
+    height: auto !important;
+    aspect-ratio: 1/1 !important;
+  }
+}
+
+/* Unify the page heading so title + stat chips never overlap. */
+@media (max-width: 900px) {
+  .compact-page-head {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .page-stat-row {
+    justify-content: flex-start !important;
+  }
+
+  .club-search-row {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .club-search-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Unify section widths so sections align with the hero on mobile. */
+@media (max-width: 760px) {
+
+  .section,
+  .home-events {
+    width: calc(100% - 28px) !important;
+    margin-inline: auto !important;
+  }
+}
+
+/* Unified mobile nav container (everything inside stays centered/contained). */
+@media (max-width: 1050px) {
+  .nav-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    width: calc(100% - 12px) !important;
+    padding: 0 6px !important;
+    gap: 8px !important;
+  }
+
+  .brand {
+    flex: 0 0 auto !important;
+    min-width: 0 !important;
+  }
+
+  .hamb {
+    color: var(--text-primary) !important;
+  }
+
+  .hamb i {
+    background: currentColor !important;
+    box-shadow: none !important;
+    width: 10px !important;
+    height: 2px !important;
+    margin: 2.5px 0 !important;
+  }
+}
+
+/* Hamburger bars: clearly smaller, matching the two icon buttons. Placed last
+   so it wins regardless of media-query overlap in the override pile. */
+.hamb i {
+  background: currentColor !important;
+  box-shadow: none !important;
+  width: 8px !important;
+  height: 1.5px !important;
+  margin: 2px 0 !important;
+}
+
+/* JYC search modal: move the magnifier glyph to the right of the input so it
+   stops colliding with the placeholder text. */
+.search-input-wrap>span {
+  order: 99 !important;
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+}
+
+.search-input-wrap input {
+  padding-left: 10px !important;
+}
+
+/* Bottom nav bar: floating pill shape with rounded ends, centered width. */
+.mobile-dock {
+  border-radius: 999px !important;
+  margin-inline: auto !important;
+  max-width: min(560px, calc(100vw - 20px)) !important;
+  padding: 6px 8px !important;
+}
+
+/* Home DISCOVER section: remove outer translucent band background and glow,
+   but keep the empty-state box (`.state compact`) inside fully styled. */
+.home .dark-band {
+  background: transparent !important;
+}
+
+.home .dark-band:before,
+.home .dark-band:after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Search and club search controls: pill shape instead of rectangles. */
+.search-input-wrap,
+.club-search,
+.event-search {
+  border-radius: 999px !important;
+}
+
+.search-input-wrap {
+  min-height: 66px !important;
+}
+
+.search-suggestions button,
+.search-recent button {
+  border-radius: 999px !important;
+  min-height: 40px !important;
+  padding: 0 16px !important;
+}
+
+.search-list>button {
+  border-radius: 999px !important;
+}
+
+.search-list>button small {
+  border-radius: 999px !important;
+}
+
+/* /events — pill shaped toolbar, cards and calendar. */
+.events-page .event-toolbar select {
+  border-radius: 999px !important;
+}
+
+.events-page .seg button {
+  border-radius: 999px !important;
+}
+
+.events-page .event-card-premium {
+  border-radius: 999px !important;
+}
+
+.events-page .calendar-day {
+  border-radius: 999px !important;
+  padding: 8px !important;
+}
+
+.events-page .calendar-day>div:first-child {
+  border-bottom: 0 !important;
+  border-radius: 999px !important;
+  padding: 12px 18px !important;
+}
+
+.events-page .calendar-event {
+  border-radius: 999px !important;
+  margin-top: 6px !important;
+  border: 1px solid var(--border-tech) !important;
+  background: color-mix(in srgb, var(--bg-card) 62%, transparent) !important;
+  padding: 12px 18px !important;
+  grid-template-columns: 90px minmax(0, 1fr) minmax(120px, 1fr) !important;
+}
+
+.events-page .calendar-event small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

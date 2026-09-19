@@ -1,10 +1,10 @@
-const CACHE_NAME = 'jyc-cache-v13-4-reference';
+const CACHE_NAME = 'jyc-cache-v15-functional-platform';
 
 const APP_SHELL = [
   '/',
   '/offline.html',
   '/manifest.json',
-  '/jyc-phoenix-reference.png'
+  '/jyc-logo-circle.png'
 ];
 
 self.addEventListener('install', (event) => {
@@ -48,5 +48,38 @@ self.addEventListener('fetch', (event) => {
       }
       return response;
     }).catch(() => caches.match('/offline.html')))
+  );
+});
+
+self.addEventListener('push', (event) => {
+  let payload = {};
+  try { payload = event.data ? event.data.json() : {}; } catch { payload = { body: event.data?.text?.() || 'A new JYC update is available.' }; }
+  const title = payload.title || 'JYC Update';
+  const options = {
+    body: payload.body || 'A new JYC update is available.',
+    icon: payload.icon || '/jyc-logo-circle.png',
+    badge: payload.badge || '/jyc-logo-circle.png',
+    tag: payload.tag || 'jyc-update',
+    data: { url: payload.url || '/' },
+    renotify: true
+  };
+  event.waitUntil(self.registration.showNotification(title, options));
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  const candidate = new URL(event.notification.data?.url || '/', self.location.origin);
+  const target = candidate.origin === self.location.origin ? candidate.href : self.location.origin + '/';
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+      for (const client of clientList) {
+        if ('focus' in client) {
+          try { client.navigate(target); } catch {}
+          return client.focus();
+        }
+      }
+      if (clients.openWindow) return clients.openWindow(target);
+      return undefined;
+    })
   );
 });

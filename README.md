@@ -1,3 +1,18 @@
+# JYC Website — V14.2 Platform Pass
+
+V14.2 builds on the senior interaction pass with an interactive phoenix stage, JYC ecosystem navigation, metadata-driven Discover, editorial Moments, magnetic mobile navigation, pill-first controls, dynamic viewport counters, responsive 3D tilt, and a footer-only admin entry.
+
+The project remains data-first: empty states do not invent clubs, events, people, or photographs.
+
+## New platform surfaces
+- `/discover` — interest-based discovery from published club metadata.
+- Interactive hero phoenix depth/tilt and orbit system.
+- JYC Ecosystem on the homepage.
+- JYC Moments editorial archive preview.
+- Real-data hero counters with one-time count-up.
+
+## Verification
+Run `npm install` and `npm run build` locally before deployment. The packaging environment used for this release could not complete npm dependency installation because the registry request timed out, so a production build is not claimed as verified here.
 # JIIT Youth Club — Sector 128
 
 Official JYC website for JIIT Sector 128, Noida.
@@ -181,3 +196,7 @@ The implementation keeps the existing Supabase/CMS data model and does not add t
 ## V13.8 Animated Reference Polish
 
 The latest UI pass adds visibly moving orbital rings and light nodes to the phoenix hero, subtle star/network motion, desktop pointer-depth parallax, a live next-event countdown strip, and native share/clipboard actions on club and event detail pages. The implementation keeps the existing Supabase/PWA/admin architecture and adapts open-source UI interaction patterns without adding a runtime UI dependency.
+
+## V13.9 product polish
+
+V13.9 adds a theme-aware custom cursor for fine pointers, an improved first-visit guide, and Fest Mode 2.0. Fest Mode now includes a live board, countdown, programme search and category filters, archive/schedule views, announcement and result panels, share/calendar actions, and a five-item mobile dock. Fest programme records can carry dates, times, descriptions and optional detail links. Reduced-motion and touch-device fallbacks remain enabled.

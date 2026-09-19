@@ -8,6 +8,46 @@
   "theme_color": "#0f0e11",
   "description": "Official JIIT Youth Club experience for clubs, events and campus communities.",
   "icons": [
-    {"src":"/jyc-phoenix-reference.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+    {
+      "src": "/jyc-logo-circle.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "JYC Events",
+      "short_name": "Events",
+      "url": "/events",
+      "icons": [
+        {
+          "src": "/jyc-logo-circle.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "My JYC Agenda",
+      "short_name": "Agenda",
+      "url": "/agenda",
+      "icons": [
+        {
+          "src": "/jyc-logo-circle.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "JYC Discover",
+      "short_name": "Discover",
+      "url": "/discover",
+      "icons": [
+        {
+          "src": "/jyc-logo-circle.png",
+          "sizes": "512x512"
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,33 @@
+/* Bigger home/hero typography — scoped to the landing page only. */
+@media (min-width: 761px){
+  .hero-copy .eyebrow{font-size:13px!important;letter-spacing:.2em!important}
+  .hero-copy h1{font-size:clamp(60px,7.5vw,106px)!important}
+  .hero-copy h4{font-size:17px!important;letter-spacing:.24em!important;margin:0 0 22px!important}
+  .hero-copy>p{font-size:19px!important;line-height:1.62!important;max-width:680px!important}
+  .hero-actions .btn{font-size:15px!important;min-height:48px!important;padding:0 22px!important}
+  .hero-stats strong{font-size:28px!important}
+  .hero-stats span{font-size:11px!important;letter-spacing:.12em!important}
+  .float-chip{font-size:12px!important;padding:9px 14px!important}
+  .logo-core span{font-size:12px!important;bottom:-34px!important}
+  .reference-side-note{font-size:13px!important;width:150px!important;gap:10px!important}
+  .reference-campus-badge{font-size:12px!important;padding:8px 13px!important}
+  .reference-section-head h2{font-size:36px!important}
+  .reference-section-head p{font-size:15px!important}
+  .reference-view-all{font-size:14px!important;padding:11px 18px!important}
+}
+@media (max-width:760px){
+  .hero-copy .eyebrow{font-size:11px!important}
+  .hero-copy h1{font-size:clamp(46px,13.5vw,58px)!important}
+  .hero-copy h4{font-size:14px!important;letter-spacing:.22em!important;margin:0 0 16px!important}
+  .hero-copy>p{font-size:15px!important;line-height:1.6!important}
+  .hero-actions .btn{font-size:13px!important;min-height:42px!important;padding:0 16px!important}
+  .hero-stats strong{font-size:22px!important}
+  .hero-stats span{font-size:9px!important;letter-spacing:.08em!important}
+  .float-chip{font-size:9px!important;padding:7px 10px!important}
+  .logo-core span{font-size:9px!important;bottom:-30px!important}
+  .reference-side-note{font-size:10px!important;width:95px!important}
+  .reference-campus-badge{font-size:9px!important;padding:6px 10px!important}
+  .reference-section-head h2{font-size:26px!important}
+  .reference-section-head p{font-size:12px!important}
+  .reference-view-all{font-size:11px!important;padding:8px 14px!important}
+}

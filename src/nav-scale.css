@@ -1,0 +1,15 @@
+/* Bigger, easier-to-click top navigation. */
+@media (min-width:1051px){
+  .nav-inner{height:80px!important;min-height:80px!important}
+  .nav nav button{font-size:14px!important;min-height:46px!important;padding:0 16px!important;display:inline-flex!important;align-items:center!important}
+  .brand span{font-size:15px!important}
+  .search-trigger{width:170px!important;min-width:170px!important;height:44px!important;font-size:13px!important}
+  .theme-toggle{width:46px!important;height:46px!important;flex-basis:46px!important;font-size:18px!important}
+}
+@media (max-width:1050px){
+  .hamb{width:46px!important;height:46px!important;min-width:46px!important;flex-basis:46px!important}
+  .search-trigger{width:46px!important;height:46px!important;min-width:46px!important;flex-basis:46px!important;font-size:18px!important}
+  .theme-toggle{width:46px!important;height:46px!important;flex-basis:46px!important;font-size:18px!important}
+  .brand span{font-size:12px!important}
+  .nav nav button{font-size:14px!important;min-height:48px!important}
+}

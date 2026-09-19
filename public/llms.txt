@@ -1,0 +1,26 @@
+# JIIT Youth Club
+
+JIIT Youth Club (JYC) is the student-led campus ecosystem for JIIT Sector 128, Noida.
+
+## Public routes
+- / — JYC home
+- /clubs — published clubs and communities
+- /events — published events
+- /gallery — published visual archive
+- /team — published JYC team
+- /discover — interest-based club discovery using published metadata
+- /calendar — JYC and academic calendar views
+- /recruitment — published recruitment opportunities
+- /auditions — published auditions
+- /my-jyc — saved clubs/events and account-linked registrations
+- /fest-pass — public digital fest pass
+- /map — published campus venues
+- /certificates — public certificate verification
+- /download — self-hosting and source access
+- /moments — editorial campus archive
+- /agenda — saved-event personal agenda and calendar export
+- /projects — projects published by JYC clubs
+- /achievements — achievements published by JYC clubs
+- /settings — device performance and motion preferences
+
+Only content published by JYC administrators should be treated as official. Empty states indicate that no corresponding official content has been published yet.
