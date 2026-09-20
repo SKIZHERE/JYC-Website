@@ -1513,3 +1513,82 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .command-trigger kbd{display:none}
 }
 @media(prefers-reduced-motion:reduce){.admin-command{animation:none}}
+.hero-art {
+  max-width: 480px !important;
+  max-height: 480px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 2. Background orbits ko scale down karo taaki aaspas khali space na bikhre */
+.hero-art .orbit {
+  width: 78% !important;
+  height: 78% !important;
+  opacity: 0.22 !important;
+}
+
+/* 3. Phoenix logo ko proportional aur tight rakho */
+.hero-art .logo-core img,
+.interactive-phoenix img {
+  max-width: 210px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 20px rgba(235, 33, 46, 0.4)) !important;
+}
+
+/* 4. Floating orbit cards (Clubs, Events, My JYC, Team) ko tight bounds me lao */
+.hero-art .float-chip,
+.hero-art .orbit-chip {
+  padding: 6px 14px !important;
+  font-size: 0.75rem !important;
+  border-radius: 999px !important;
+  white-space: nowrap !important;
+  backdrop-filter: blur(8px) !important;
+  background: rgba(20, 20, 24, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+/* 5. Inki positions ko center ke paas lock karo */
+.hero-art .chip1 {
+  top: 14% !important;
+  left: 6% !important;
+}
+
+.hero-art .chip2 {
+  bottom: 14% !important;
+  right: 6% !important;
+}
+.more-sheet-overlay,
+.more-sheet,
+.overlay,
+.search-modal {
+  cursor: default !important;
+}
+
+/* 2. More sheet aur Search ke sabhi clickable buttons par pointer cursor dikhao */
+.more-sheet button,
+.more-sheet a,
+.more-sheet-grid button,
+.search-modal button,
+.search-list button {
+  cursor: pointer !important;
+}
+
+/* 3. Search inputs aur har input field par blinking text caret aur I-beam cursor force karo */
+input,
+textarea,
+select,
+.search-input-wrap input {
+  cursor: text !important;
+  caret-color: #eb212e !important; /* JYC Red Color Caret */
+}
+
+/* 4. Custom cursor class active hone ke baad bhi inputs par system caret hide na ho */
+body.jyc-custom-cursor input,
+body.jyc-custom-cursor textarea,
+body.jyc-custom-cursor .more-sheet button {
+  pointer-events: auto !important;
+}
